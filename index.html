@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Pulse V3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="site-branding">
+        <h1>Campus Pulse V3</h1>
+        <p>Discover what is happening on campus.</p>
+    </div>
+
+    <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#">Events</a>
+        <a href="#">Organizations</a>
+    </nav>
+</header>
+
+<main>
+    <section class="events-section">
+
+        <div class="section-heading">
+            <h2 id="events-heading">Upcoming Events</h2>
+            <p id="event-count"></p>
+        </div>
+
+        <div class="event-controls">
+
+            <div class="control-group">
+                <label for="search">Search Events</label>
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="Search by title, category, location, or description..."
+                >
+            </div>
+
+            <div class="control-group">
+                <label for="category-filter">Category</label>
+
+                <select id="category-filter">
+                    <option value="all">All Categories</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Music">Music</option>
+                    <option value="Athletics">Athletics</option>
+                    <option value="Arts">Arts</option>
+                </select>
+            </div>
+
+            <div class="control-group reset-group">
+                <button id="reset-filters" type="button">
+                    Reset Filters
+                </button>
+            </div>
+
+        </div>
+
+        <!-- JavaScript creates the event cards here -->
+        <div id="event-list" class="event-grid"></div>
+
+    </section>
+</main>
+
+<footer class="site-footer">
+    <p>Campus Pulse</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
